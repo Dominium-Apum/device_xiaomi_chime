@@ -111,7 +111,7 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_SEPARATED_DTBO := false
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADERS := kernel/xiaomi/juice
-TARGET_KERNEL_CONFIG := vendor/bengal-perf_defconfig
+TARGET_KERNEL_CONFIG := vendor/chime_defconfig
 
 BOARD_RAMDISK_USE_LZ4 := true
 
