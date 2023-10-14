@@ -177,6 +177,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.cpurend.vsync=false \
     ro.hwui.render_ahead=20
 
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.surface_flinger.protected_contents=true
 
 # DPM
 PRODUCT_VENDOR_PROPERTIES += \
