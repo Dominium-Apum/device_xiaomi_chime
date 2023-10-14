@@ -152,6 +152,15 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 USE_DEX2OAT_DEBUG := false
 
+# AOT Preload
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Launcher3QuickStep \
+    Nexuslauncher \
+    lawnchair \
+    Settings \
+    SystemUI \
+    SystemUIGoogle
+
 # Display
 TARGET_USE_QCOM_OFFSET := true
 PRODUCT_PACKAGES += \
