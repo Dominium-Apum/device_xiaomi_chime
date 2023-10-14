@@ -392,6 +392,11 @@ PRODUCT_VENDOR_PROPERTIES += \
     rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so \
     ro.vendor.radio.features_common=3 \
     ro.vendor.se.type=HCE,UICC \
+    persist.radio.add_power_save=1 \
+    pm.sleep_mode=1 \
+    ro.ril.disable.power.collapse=0 \
+    ro.ril.fast.dormancy.rule=1 \
+    ro.ril.fast.dormancy.timeout=3 \
     sys.vendor.shutdown.waittime=500
 
 # Recovery
