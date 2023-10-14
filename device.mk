@@ -22,6 +22,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# APN
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/overlay/ChimeCarrierConfigOverlay/etc/apns-conf.xml:system/etc/apns-conf.xml
+
 # Attestation
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
