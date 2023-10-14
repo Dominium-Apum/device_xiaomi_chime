@@ -158,7 +158,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_gl_backpressure=1 \
-    debug.sf.disable_client_composition_cache=1 \
     vendor.display.enable_async_powermode=0 \
     debug.renderengine.backend=skiaglthreaded \
     debug.cpurend.vsync=false \
@@ -213,10 +212,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 # GSI
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
-
-# GFX
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.config.avoid_gfx_accel=true
 
 # GPS
 PRODUCT_COPY_FILES += \
