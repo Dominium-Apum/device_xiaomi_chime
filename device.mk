@@ -160,6 +160,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_gl_backpressure=1 \
     vendor.display.enable_async_powermode=0 \
     debug.renderengine.backend=skiaglthreaded \
+    debug.sf.latch_unsignaled=1 \
     debug.cpurend.vsync=false \
     ro.hwui.render_ahead=20
 
