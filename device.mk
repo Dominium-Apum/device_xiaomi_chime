@@ -161,7 +161,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.disable_client_composition_cache=1 \
     vendor.display.enable_async_powermode=0 \
     debug.renderengine.backend=skiaglthreaded \
+    debug.cpurend.vsync=false \
     ro.hwui.render_ahead=20
+
 
 # DPM
 PRODUCT_VENDOR_PROPERTIES += \
