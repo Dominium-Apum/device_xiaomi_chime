@@ -7,7 +7,7 @@
 
 set -e
 
-DEVICE=juice
+DEVICE=chime
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks

@@ -13,7 +13,7 @@
 // limitations under the License.
 
 cc_library_shared {
-    name: "lights.juice",
+    name: "lights.chime",
     srcs: ["lights.c"],
     relative_install_path: "hw",
     header_libs: ["libhardware_headers"],

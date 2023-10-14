@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/xiaomi/juice
+DEVICE_PATH := device/xiaomi/chime
 COMMON_PATH := device/qcom/common
 
 # APEX
@@ -84,8 +84,8 @@ ODM_MANIFEST_SKUS += lemon
 ODM_MANIFEST_LEMON_FILES := $(DEVICE_PATH)/configs/vintf/manifest_nfc.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_juice
-TARGET_RECOVERY_DEVICE_MODULES := libinit_juice
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_chime
+TARGET_RECOVERY_DEVICE_MODULES := libinit_chime
 
 # Kernel
 BOARD_KERNEL_CMDLINE := \
@@ -110,7 +110,7 @@ BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_SEPARATED_DTBO := false
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_HEADERS := kernel/xiaomi/juice
+TARGET_KERNEL_HEADERS := kernel/xiaomi/chime
 TARGET_KERNEL_CONFIG := vendor/chime_defconfig
 
 BOARD_RAMDISK_USE_LZ4 := true
@@ -129,7 +129,7 @@ TARGET_PROVIDES_LIBLIGHT := true
 TARGET_DISABLED_UBWC := true
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := lime,citrus,lemon,pomelo,juice
+TARGET_OTA_ASSERT_DEVICE := lime,citrus,lemon,pomelo,chime
 
 # Partitions - Dynamic
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
@@ -203,4 +203,4 @@ BOARD_VNDK_VERSION := current
 CONFIG_ACS := true
 
 # Inherit from the proprietary version
-include vendor/xiaomi/juice/BoardConfigVendor.mk
+include vendor/xiaomi/chime/BoardConfigVendor.mk

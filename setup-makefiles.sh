@@ -7,7 +7,7 @@
 
 set -e
 
-DEVICE=juice
+DEVICE=chime
 VENDOR=xiaomi
 INITIAL_COPYRIGHT_YEAR=2020
 

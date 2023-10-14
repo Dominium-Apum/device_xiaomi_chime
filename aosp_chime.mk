@@ -5,12 +5,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from common AOSP configuration
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Inherit from juice device
-$(call inherit-product, device/xiaomi/juice/device.mk)
+# Inherit from chime device
+$(call inherit-product, device/xiaomi/chime/device.mk)
 
 # Device identifier
-PRODUCT_NAME := aosp_juice
-PRODUCT_DEVICE := juice
+PRODUCT_NAME := aosp_chime
+PRODUCT_DEVICE := chime
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := SM6115
 PRODUCT_MANUFACTURER := Xiaomi

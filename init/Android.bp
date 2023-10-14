@@ -13,10 +13,10 @@
 // limitations under the License.
 
 cc_library_static {
-    name: "libinit_juice",
+    name: "libinit_chime",
     recovery_available: true,
     shared_libs: ["libbase"],
-    srcs: ["init_juice.cpp"],
+    srcs: ["init_chime.cpp"],
     include_dirs: [
         "system/core/init",
         "system/libbase/include"
@@ -24,15 +24,15 @@ cc_library_static {
 }
 
 prebuilt_etc {
-    name: "init.juice.rc",
-    src: "init.juice.rc",
+    name: "init.chime.rc",
+    src: "init.chime.rc",
     sub_dir: "init",
     vendor: true,
 }
 
 prebuilt_etc {
-    name: "init.juice.perf.rc",
-    src: "init.juice.perf.rc",
+    name: "init.chime.perf.rc",
+    src: "init.chime.perf.rc",
     sub_dir: "init",
     vendor: true,
 }
@@ -52,9 +52,9 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "ueventd.juice.rc",
+    name: "ueventd.chime.rc",
     filename: "ueventd.rc",
-    src: "ueventd.juice.rc",
+    src: "ueventd.chime.rc",
     device_specific: true,
 }
 
