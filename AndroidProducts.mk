@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bootleg_chime.mk
+    $(LOCAL_DIR)/kenvyra_chime.mk
 
 COMMON_LUNCH_CHOICES := \
-    bootleg_chime-user \
-    bootleg_chime-userdebug \
-    bootleg_chime-eng
+    kenvyra_chime-user \
+    kenvyra_chime-userdebug \
+    kenvyra_chime-eng
