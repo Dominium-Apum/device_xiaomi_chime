@@ -179,8 +179,10 @@ PRODUCT_COPY_FILES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-service
+    vendor.lineage.health-service.default
+
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/input_suspend
 
 # HIDL
 PRODUCT_PACKAGES += \
