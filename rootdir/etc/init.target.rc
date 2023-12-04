@@ -425,14 +425,7 @@ on boot
     chmod 0777 /data/vendor/focaltech/Conf_MultipleTest_FT8720M-01.ini
 
     #xiong add
-    ## Lineage Health
-    chown system system /sys/class/power_supply/battery/input_suspend
-    chmod 0660 /sys/class/power_supply/battery/input_suspend
-
-    ## Lineage Fastcharge
-    chown system system /sys/class/qcom-battery/restrict_chg
-    chmod 0666 /sys/class/qcom-battery/restrict_chg
-
+    chmod 0777 /sys/class/power_supply/battery/input_suspend
     chmod 0777 /sys/class/power_supply/battery/constant_charge_current_max
     #add for ignoring modem crash
     write /sys/bus/msm_subsys/devices/subsys3/restart_level related
