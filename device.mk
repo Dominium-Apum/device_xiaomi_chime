@@ -348,8 +348,6 @@ endif
 
 # AOT Preload
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    KenvyraLauncher3 \
-    KenvyraLauncher \
     Settings \
     SystemUI
 
