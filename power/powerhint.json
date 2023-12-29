@@ -318,18 +318,6 @@
       "Node": "KernelBatterySaver",
       "Duration": 0,
       "Value": "Y"
-    },
-    {
-      "PowerHint": "Flipendo",
-      "Node": "CPULittleClusterMaxFreq",
-      "Duration": 0,
-      "Value": "1420800"
-    },
-    {
-      "PowerHint": "Flipendo",
-      "Node": "CPUBigClusterMaxFreq",
-      "Duration": 0,
-      "Value": "1612800"
     }
   ]
 }
