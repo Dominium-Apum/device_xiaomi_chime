@@ -118,6 +118,11 @@
      <bool name="config_lidControlsSleep">true</bool>
 
      <string-array name="config_deviceDisabledComponents" translatable="false">
+         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicNotificationsSettingsActivity</item>
+         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSettingsActivity</item>
+         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSetupWizardActivity</item>
+         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryContentProvider</item>
+         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryActivity</item>
          <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
          <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
          <item>com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver</item>
@@ -967,8 +972,8 @@
         <item>"/vendor/lib64/libadreno_utils.so"</item>
         <item>"/vendor/lib64/libgpudataproducer.so"</item>
         <item>"/vendor/lib64/libgsl.so"</item>
-        <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
-        <item>"/system_ext/priv-app/SystemUI/oat/arm64/SystemUI.odex"</item>
+        <item>"/system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk"</item>
+        <item>"/system_ext/priv-app/SystemUIGoogle/oat/arm64/SystemUIGoogle.odex"</item>
         <item>"/system/bin/surfaceflinger"</item>
         <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
         <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
@@ -1141,4 +1146,7 @@
         <item>0</item> <!-- COLOR_MODE_DEFAULT    -->
         <item>0</item> <!-- COLOR_MODE_DISPLAY_P3 -->
     </integer-array>
+
+    <!-- Whether device supports in-display fingerprint -->
+    <bool name="config_supportsUdfps">false</bool>
 </resources>

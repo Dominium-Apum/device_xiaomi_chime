@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bootleg_chime.mk
+    $(LOCAL_DIR)/evolution_chime.mk
 
 COMMON_LUNCH_CHOICES := \
-    bootleg_chime-user \
-    bootleg_chime-userdebug \
-    bootleg_chime-eng
+    evolution_chime-user \
+    evolution_chime-userdebug \
+    evolution_chime-eng
