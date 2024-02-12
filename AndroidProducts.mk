@@ -8,6 +8,4 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/evolution_chime.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_chime-user \
-    evolution_chime-userdebug \
-    evolution_chime-eng
+    $(foreach variant, user userdebug eng, evolution_chime-$(variant))
